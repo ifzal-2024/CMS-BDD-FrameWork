@@ -36,9 +36,22 @@ public class LogInStepDefinition extends BaseClass{
 	    
 	}
 
-	@Then("User will navigate to multi factor authentication modal")
+	@Then("User will navigate to multi factor authentication modal") 
 	public void user_will_navigate_to_multi_factor_authentication_modal() {
 		logIn.landingOnMultiFactorAuthenticationModal();
 	 	}
 
+	// This below 2 method is from "Login with fixed Valid Credential"
+	@When("User enter UserId as {string}")
+	public void user_enter_user_id_as(String string) {
+		logIn.validateUserId(string);
+	    
+	}
+
+	@When("User enter Password as {string}")
+		public void user_enter_password_as(String string) {
+		logIn.validatePassword(string);
+		
+	    
+}
 }

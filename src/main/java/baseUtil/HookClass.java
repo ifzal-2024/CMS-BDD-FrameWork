@@ -23,7 +23,7 @@ public class HookClass {
 		baseClass.setUp();
 	}
 	
-
+ 
 	@After
 	public void afterEachTest(Scenario scenario) {
 		if (scenario.isFailed()) {

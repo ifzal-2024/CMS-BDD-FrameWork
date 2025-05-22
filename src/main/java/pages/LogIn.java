@@ -55,7 +55,7 @@ public class LogIn {
 	
 	public void validatePassword() {
 		elementDisplayed(password);
-		inputText(password, "OnthrallTest@1234");
+		inputText(password, "OnthrallTest@1234"); 
 		pause(3000);
 	}
 	
@@ -79,6 +79,20 @@ public class LogIn {
 		validationOfHeader(multiFactorAuthentication, "Multi-factor Authentication");
 		pause(3000);
 	}
+	
+	public void validateUserId (String string) {
+		elementDisplayed(loginLogo);
+		elementDisplayed(userId);
+		inputText(userId, string);
+		pause(3000);
+	}
+	
+	public void validatePassword (String string) {
+		elementDisplayed(password);
+		inputText(password, string);
+		pause(3000);
+	}
+	
 	
 	
 	

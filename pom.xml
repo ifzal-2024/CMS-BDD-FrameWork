@@ -20,7 +20,7 @@
 			<version>7.20.1</version>
 		</dependency>
 
-		<!-- JUnit is the alternate of testNG, used to test the functionality of the Application -->
+	<!-- JUnit is the alternate of testNG, used to test the functionality of the Application -->
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
@@ -49,18 +49,7 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-simple</artifactId>
 			<version>2.0.16</version>
-			<scope>test</scope>
 		</dependency>
-		
-		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
-<dependency>
-    <groupId>org.junit.jupiter</groupId>
-    <artifactId>junit-jupiter-api</artifactId>
-    <version>5.11.4</version>
-</dependency>
-
-
-		
 	</dependencies>
 
 	<build>

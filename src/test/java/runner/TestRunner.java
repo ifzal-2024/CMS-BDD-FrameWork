@@ -11,15 +11,15 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		tags = "@login",
+		tags = "@smoke",
 		features = "src/test/java/feature",
 		glue = {"stepDefinition", "baseUtil"},
-		monochrome = false,
+		monochrome =false,
 		dryRun = false,
 		plugin = {"pretty", "html:target/report.html", "json:target/report.json", "junit:target/report.xml"}
 		)
 
-public class TestRunner {
+public class TestRunner {  
 	
 
 }
